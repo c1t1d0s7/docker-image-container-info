@@ -3,10 +3,12 @@ const os = require('os');
 const ip = require('ip');
 const dns = require("dns");
 
-console.log("...APPLICATION STARTING...");
+console.log(Date());
+console.log("...Start My Node.js Application...");
 
 var handler = function(request, response) {
-    console.log("RECEIVED REQUEST FROM " + request.connection.remoteAddress);
+    console.log(Date());
+    console.log("Received Request From " + request.connection.remoteAddress);
     response.writeHead(200);
     response.write("Message: " + process.argv[2] + "\n");
     response.write("Hostname: " + os.hostname() + "\n");
