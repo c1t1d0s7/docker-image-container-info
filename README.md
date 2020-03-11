@@ -3,7 +3,7 @@ Gathering the Container Info
 
 ### Usage
 ```shell
-docker run --name \<CON_NAME\> -p \<PORT:8080\> -d \<IMAGE\> \<MESSAGE\>
+docker run --name <CON_NAME> -p <PORT:8080> -d <IMAGE> <MESSAGE>
 ```
 
 ### Example
